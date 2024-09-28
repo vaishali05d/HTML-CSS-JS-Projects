@@ -1,0 +1,147 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    /* place-items: center; */
+}
+.target-banner-area{
+    position:relative;
+    background-image: url(/images/quality-education-banner2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+ }
+ 
+  .slider{
+    margin-top: 15px;
+    height: 300px;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+  }
+  .slide-track{
+    display: flex;
+    width: calc(300px*5);
+    animation: scroll 20s linear infinite;
+  }
+  .slide-track:hover{
+    animation-play-state: paused ;
+  }
+  @keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*5));
+    }
+  }
+  .slide{
+    height:250px ;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+  }
+  .img{
+    width: 100%;
+    height: 300px;
+    transition: transform 1s;
+  }
+  img:hover{
+    transform: translateZ(20px);
+  }
+  .slider::before, .slide::after{
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+  }
+  .slider::before{
+    left: 0%;
+    top:0%
+  }
+  .slider::after{
+    right: 0%;
+    top: 0%;
+    transform: rotateZ(180deg);
+  }
+  section{
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  section h2{
+    font-size: 40px;
+    margin:5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(211, 212, 212),
+    1px 2px 1px rgb(211, 212, 212),
+    1px 3px 1px rgb(211, 212, 212),
+    1px 4px 1px rgb(211, 212, 212),
+    1px 5px 1px rgb(211, 212, 212);
+    word-spacing: 8px;
+  }
+  section p{
+    font-size: 20px;
+    color: rgb(100, 12, 12);
+    font-weight: 700;
+    margin: 15px 10px 0px 10px;
+  }
+  .target-container{
+    transform: translateX(250px);
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+
+  }
+  .img img{
+    height: 200px;
+    width: 150px;
+    margin-right: 15px;
+  }
+  .target-content{
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 0.7rem 1.8rem rgb(161, 149, 131);
+    border-radius: 50px;
+    margin: 20px;
+    background-color:#f8dca9;
+  }
+  .target-content h4{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .target-content p{
+    font-size: 17px;
+    color: rgb(100, 36, 36);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  @media screen and (max-width:1024px) {
+   .target-content{
+    grid-template-columns: auto auto;
+    margin-left: 300px;
+   } 
+  }
+  @media screen and (max-width:767px) {
+    .target-content{
+     grid-template-columns: repeat(1,1fr);
+     margin-left: 300px;
+     margin-right: px;
+    } 
+    section h2, section p{
+      margin-left: 300px;
+    }
+   }
+   

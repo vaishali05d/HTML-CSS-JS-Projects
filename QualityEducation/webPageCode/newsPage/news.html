@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News</title>
+    <link rel="stylesheet" href="/webPageCode/homePage/home.css">
+    <link rel="stylesheet" href="/webPageCode/newsPage/news.css">
+</head>
+<body>
+    <nav >
+        <div class="main-nav flex container">
+            <div class="global-logo">
+                <a href="#" class="logo">
+                    <img src="/images/gg4.png" alt="">
+                </a>
+               <p> THE GLOBAL GOALS</p>
+            </div>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item"><a href="/webPageCode/homePage/home.html">Home</a></li>
+                    <li class="hover-link nav-item"><a href="/webPageCode/targetsPage/targets.html">Targets</a></li>
+                    <li class="hover-link nav-item"><a href="/webPageCode/goal17Page/Goals17.html">The 17 Goals</a></li>
+                    <li class="hover-link nav-item"><a href="/webPageCode/newsPage/news.html">News</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search here..." class="news-input" id="search-text">
+                <button type="submit" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <div class="news-heading-area">
+        <h2>NEWS</h2>
+    </div>
+    <main>
+        <div class="cards-container flex container" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 id="news-source" class="news-source">date: 23-12-02</h6>
+                <p id="news-desc" class="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nostrum libero nisi aspernatur. Unde voluptatum accusamus, labore aliquid voluptates esse obcaecati neque dignissimos veritatis natus nesciunt eum ea vero error.</p>
+            </div>
+        </div>
+    </template>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:Info@example.com</p>
+                <p>Phone:+121 56556 565556</p>
+                <p>Address:Your Address 123 street</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Targets</a></li>
+                    <li><a href="">The 17 Goals</a></li>
+                    <li><a href="">News</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+    </footer>
+    <script src="/webPageCode/newsPage/news.js"></script>
+</body>
+</html>

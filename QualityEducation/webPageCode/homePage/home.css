@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+body{
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 0;
+  background-color:rgb(245, 170, 110);
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: rgb(22, 22, 21);
+    box-shadow: 4px 4px rgb(165, 163, 164);
+    position:fixed ;
+    top: 0%;
+    z-index: 99;
+    left: 0%;
+    right: 0%;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.global-logo{
+    text-align: center;
+}
+.logo{
+    width: 120px;
+}
+.logo img{
+    height: 80px;
+    padding: 10px;
+}
+.global-logo p{
+    padding-left: 10px;
+    font-weight: 600;
+    color: rgb(248, 238, 238);
+}
+.nav-links ul{
+    gap: 30px;
+    font-size: larger;
+}
+.nav-links ul li a{
+  color: antiquewhite;
+  text-transform: uppercase;
+}
+.hover-link a:hover{
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 1px 2px lightpink;
+    background-color: rgb(243, 175, 150);
+    color: rgb(16, 16, 17);
+    padding: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.nav-links, .search-bar{
+    margin-top: 40px;
+}
+.search-bar{
+    height: 50px;
+    gap: 8px;
+}
+.news-input{
+    margin-right: 10px;
+    height: 70%;
+    width: 230px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    border-color: aliceblue;
+    box-shadow: 3px 3px rgb(245, 184, 245);
+    font-family: "poppins", sans-serif;
+}
+.search-bar button{
+    height: 65%;
+    padding-inline: 10px;
+    color: white;
+    font-weight: 100;
+    background-color: rgb(6, 171, 241);
+    border-radius: 15px;
+    border: 2px solid rgb(158, 191, 192);
+    box-shadow: 1px 2px rgb(209, 210, 211);
+}
+.search-bar button:hover{
+    background-color: rgb(2, 164, 233);
+    cursor: pointer;
+    font-family: "poppins", sans-serif;
+    color: rgb(248, 246, 243);
+}
+.banner-area{
+    position:relative;
+    background-image: url(/images/quality-education-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    margin-top: 63px;
+    padding: 100px;
+ }
+ .head-content h2{
+  word-spacing: 15px;
+  font-size:50px;
+  color: rgb(247, 99, 99);
+  text-shadow: 1px 1px 1px rgb(250, 212, 212),
+               1px 2px 1px rgb(250, 212, 212),
+               1px 3px 1px rgb(250, 212, 212),
+               1px 4px 1px rgb(250, 212, 212),
+               1px 5px 1px rgb(250, 212, 212),
+               1px 6px 1px rgb(250, 212, 212),
+               1px 7px 1px rgb(124, 8, 8);
+  font-family: 'Times New Roman', Times, serif;
+}
+.head-content h4{
+  margin-top: 5px;
+  word-spacing: 5px; 
+  font-size: 25px;
+  color: rgb(150, 25, 41);
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgb(250, 212, 212),
+  1px 2px 1px rgb(250, 212, 212),
+  1px 3px 1px rgb(250, 212, 212);
+}
+ .headline-content{
+   margin-top: 50px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ .headline-content h3{
+  color: rgb(19, 18, 17);
+  text-decoration:underline;
+   margin: 10px;
+   font-size: 35px;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 900;
+   text-shadow: 1px 1px 1px rgb(124, 125, 126),
+  1px 2px 1px rgb(124, 125, 126),
+  1px 3px 1px rgb(124, 125, 126);
+ }
+ .head-main-points div{
+   padding: 20px;
+   margin-left: 80px;
+   margin-right: 80px;
+}
+ 
+ .head-main-points p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: italic;
+   padding: 20px;
+   border-radius: 20px;
+   font-size: large;
+   font-weight: 500;
+   color: antiquewhite;
+   background-color: #481E14;
+   box-shadow:  0 0.5rem 2rem rgb(117, 66, 66);
+ }
+ .home-card-container h5{
+   text-decoration: underline;
+   text-shadow: 1px 1px 1px rgb(129, 126, 126),
+   1px 2px 1px rgb(129, 126, 126);
+   font-size: 30px;
+   font-weight: 900;
+   margin: 10px auto auto 70px ;
+   font-family: 'Times New Roman', Times, serif;
+ }
+ .img-box img{
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+ }
+ 
+ .grid{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+ }
+ .home-card{
+   display: block;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 0 0.5rem 1rem black ;
+   cursor: pointer;
+   transition: 0.2s;
+   position: relative;
+   height: 400px;
+ }
+ .home-card-content{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   position: absolute;
+   background-color:#f8ddab;
+   bottom: 0%;
+   font-weight: 700;
+   width: 100%;
+   height: 30%;
+   padding: 6px;
+   overflow: hidden;
+   transition: 0.7s;
+ }
+ .home-card-content h2{
+   text-decoration:underline;
+   text-transform: capitalize;
+   font-size:26px;
+   color:#b4381c ;
+  
+ }
+ .home-card-content p{
+   color: rgb(77, 49, 39);
+   font-size:large;
+   font-weight: 600;
+   line-height: 1.5rem;
+ }
+ .home-card-content:hover{
+   height: 75%;
+   transition: 0.7s;
+   background-color:#f8ddab;
+   font-weight: 700;
+ }
+ .home-card-content:hover h2{
+   color: darkorange;
+ }
+ @media (max-width:1024px){
+   .grid{
+      grid-template-columns: repeat(2,1fr);
+   }
+ }
+ @media (max-width:767px){
+  .head-content h4{
+    word-wrap:break-word;
+  }
+  .news-input{
+    width: 150px;
+    margin-left: 10px;
+  }
+  .search-bar button{
+    margin-top: 10px;
+  }
+   .grid{
+      grid-template-columns: repeat(1,1fr);
+   }
+ }
+ footer{
+  margin-top: 70px;
+  background: #1b1a1a;
+  padding-top: 50px;
+}
+footer .container{
+  width: 1340px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+ footer .footer-content{
+  width: 40%;
+}
+footer h3{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #a16a04;
+}
+footer .footer-content p{
+  width:190px;
+  margin: auto;
+  padding: 7px;
+  color: beige;
+}
+footer .footer-content ul{
+  text-align: center;
+}
+footer .list{
+  padding: 0;
+}
+footer .list li{
+  width: auto;
+  text-align: center;
+  list-style-type:none;
+  padding: 7px;
+  position: relative;
+}
+footer .list li a{
+color: beige;
+}
+footer .list li::before{
+  content: '';
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #f18930;
+  transition-duration: .5s;
+}
+footer .list li:hover::before{
+  width: 70px;
+}
+footer .social-icons{
+  text-align: center;
+  padding: 0;
+}
+footer .social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+footer .social-icons i{
+  color: white;
+  font-size: 25px;
+}
+footer a{
+  text-decoration: none;
+}
+footer a:hover{
+  color: #f18930;
+}
+.social-icons i:hover{
+  color: #f18930;
+}
+footer .bottom-bar{
+  background: #f18930;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+footer .bottom-bar p{
+  color: #161313;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
