@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color change</title>
+    <style>
+         #color_box{
+            margin: 20px auto;
+            text-align: center;
+            border:none;
+            border-radius: 50px;
+            height: 500px;
+            width: 500px;
+            box-shadow: 7px 7px 7px 3px rgb(68, 65, 65);
+        }
+        #btn{
+            border: 2px solid;
+            border-radius: 50px;
+            height: 50px;
+            width: 350px;
+            font-size: large;
+            margin-left: 500px;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: black;
+            color: beige; 
+        }
+    </style>
+</head>
+<body>
+    <div id="color_box"></div>
+    <button id="btn">Click here to change the box color.</button>
+    
+    <script>
+        const color_box = document.getElementById("color_box");
+        const btn = document.getElementById('btn');
+
+            
+         btn.addEventListener('click',function (){
+            const r =Math.floor(Math.random()*256);
+            const g =Math.floor(Math.random()*256);
+            const b =Math.floor(Math.random()*256);
+            const diffColor = `rgb(${r},${g},${b})`;
+            color_box.style.backgroundColor=diffColor});
+    </script>
+</body>
+</html>
