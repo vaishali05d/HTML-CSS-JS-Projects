@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link rel="stylesheet" href="emailValidator.css">
+    <script src="emailValidator.js" defer></script>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="container">
+            <div class="logo container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                    <!-- Lock Icon -->
+                    <rect x="7" y="11" width="10" height="12" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+
+                    <!-- Checkmark Icon -->
+                    <polyline points="9 12 12 15 20 9" stroke="green" fill="none" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="navList">
+                <ul class="container">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="email-heading container">
+            <h2>Enter your email to validate</h2>
+        </div>
+        <div class="container">
+            <form action="">
+                <label for="email"><b>Email Id:</b></label>
+                <br>
+                <input type="email" id="email" placeholder="Enter a email...">
+                <br>
+                <div class="container">
+                    <button type="submit" id="validateBtn">Validate</button>
+                </div>
+            </form>
+        </div>
+        <div class="email-heading container">
+            <h2>Email validation result...</h2>
+        </div>
+        <div class="validationResult container">
+            <div id="results">
+                <span>
+                    <img src="image/Iphone-spinner-2.gif" alt="">
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        Copyright | emailValidator.com | All Right Reserved
+    </footer>
+</body>
+
+</html>
